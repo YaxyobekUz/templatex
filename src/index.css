@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
+
+:root {
+  --tg-theme-header-bg-color: red;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,8 +11,48 @@
 /* --- Base --- */
 
 @layer base {
+  ::-webkit-scrollbar {
+    @apply w-0 hidden;
+  }
+
   body {
-    @apply bg-white text-base text-gray-800 font-normal;
+    @apply bg-background font-poppins text-base text-dark-800 font-normal;
+  }
+}
+
+/* --- Components --- */
+@layer components {
+  .navlink .active-fill-inner {
+    @apply fill-dark-800 transition-colors duration-200;
+  }
+
+  .navlink .active-fill {
+    @apply fill-transparent transition-colors duration-200;
+  }
+
+  .navlink .active-stroke,
+  .navlink .active-stroke-inner {
+    @apply stroke-dark-800 transition-colors duration-200;
+  }
+
+  .navlink.active .active-fill {
+    @apply !fill-primary;
+  }
+
+  .navlink.active .active-stroke {
+    @apply !stroke-primary;
+  }
+
+  .navlink.active .active-text {
+    @apply text-primary;
+  }
+
+  .navlink.active .active-stroke-inner {
+    @apply !stroke-white;
+  }
+
+  .navlink.active .active-fill-inner {
+    @apply !fill-white;
   }
 }
 
@@ -14,6 +60,6 @@
 
 @layer utilities {
   .container {
-    @apply max-w-xl w-full px-5 mx-auto bg-gray-200;
+    @apply max-w-[480px] w-full px-4 mx-auto;
   }
 }
