@@ -8,27 +8,19 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 
+// Pages
+import Home from "./pages/Home";
+import Page404 from "./pages/Page404";
+
 // Layouts
 import MainLayout from "./layouts/MainLayout";
 
-// Pages
-import Home from "./pages/Home";
-
 const App = () => {
-  useEffect(() => {
-    // Telegram Web App API ni yuklash
-    const tg = window.Telegram.WebApp;
-
-    // Telegram Web App dan foydalanuvchi ma'lumotlarini olish
-    tg.ready();
-
-    console.log("User data", tg.initData); // Foydalanuvchi ma'lumotlarini ko'rish
-  }, []);
-
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
+        <Route path="*" element={<Page404 />} />
       </Route>
     )
   );
