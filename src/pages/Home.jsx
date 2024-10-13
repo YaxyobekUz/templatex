@@ -105,11 +105,11 @@ const Home = () => {
         </div>
 
         {/* Balance */}
-        <section className="container pt-6 space-y-4">
-          <h2 className="text-lg font-medium">Your balance</h2>
+        <section className="section">
+          <h2 className="section-title">Your balance</h2>
 
           {/* section content */}
-          <div className="flex flex-col z-10 w-full h-56 bg-white/90 backdrop-blur-2xl p-4 rounded-2xl">
+          <div className="flex flex-col z-10 w-full h-56 bg-white p-4 rounded-2xl">
             <div className="flex items-center gap-2.5 -mb-5">
               <Icon src={coinIcon} className="size-7" />
 
@@ -133,8 +133,8 @@ const Home = () => {
         </section>
 
         {/* Main sections list */}
-        <section className="container pt-6 space-y-4">
-          <h2 className="text-lg font-medium">Main sections</h2>
+        <section className="section">
+          <h2 className="section-title">Main sections</h2>
 
           {/* main content */}
           <nav>
@@ -142,7 +142,7 @@ const Home = () => {
               {/* Create Post */}
               <li>
                 <Link
-                  to="/create-post"
+                  to="/create/post"
                   className="flex items-center justify-between gap-1.5 h-24 pl-4 pr-3 w-full bg-white rounded-2xl"
                 >
                   <div className="flex items-center gap-4">
@@ -168,7 +168,11 @@ const Home = () => {
                     </div>
                   </div>
 
-                  <Arrow direction="right" fill="#555" />
+                  <Arrow
+                    fill="#555"
+                    direction="right"
+                    className="size-5 xs:size-6"
+                  />
                 </Link>
               </li>
 
@@ -233,7 +237,11 @@ const Home = () => {
                     </div>
                   </div>
 
-                  <Arrow direction="right" fill="#555" />
+                  <Arrow
+                    fill="#555"
+                    direction="right"
+                    className="size-5 xs:size-6"
+                  />
                 </Link>
               </li>
 
@@ -275,7 +283,11 @@ const Home = () => {
                     </div>
                   </div>
 
-                  <Arrow direction="right" fill="#555" />
+                  <Arrow
+                    fill="#555"
+                    direction="right"
+                    className="size-5 xs:size-6"
+                  />
                 </Link>
               </li>
             </ul>

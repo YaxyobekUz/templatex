@@ -1,6 +1,6 @@
 import React from "react";
 
-const SolidArrow = ({
+const Arrow = ({
   size = 24,
   className = "",
   fill = "#333",
@@ -40,4 +40,4 @@ const SolidArrow = ({
   );
 };
 
-export default SolidArrow;
+export default Arrow;

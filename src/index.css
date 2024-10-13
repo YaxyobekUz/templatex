@@ -54,6 +54,14 @@
   .navlink.active .active-fill-inner {
     @apply !fill-white;
   }
+
+  .section {
+    @apply container pt-6 space-y-2.5 xs:space-y-4;
+  }
+
+  .section-title {
+    @apply font-medium ml-3 xs:ml-4 xs:text-lg;
+  }
 }
 
 /* --- Utilities --- */
