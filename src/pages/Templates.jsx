@@ -129,57 +129,59 @@ const Templates = () => {
         <h2 className="section-title">All templates</h2>
 
         {/* section content */}
-        {templates.length > 0 ? (
-          <ul className="w-full bg-white rounded-2xl space-y-0.5">
-            {templates.map((template) => (
-              <li
-                key={template.id}
-                className="flex items-center justify-between relative h-20 pl-4 pr-0.5 w-full bg-white rounded-2xl xs:h-24"
-              >
-                {/* template item main content */}
-                <div className="flex items-center gap-4 w-[calc(100%-50px)]">
-                  {/* icon */}
-                  <div className="flex items-center justify-center size-[50px] shrink-0 bg-primary rounded-full text-white text-lg xs:size-16">
-                    {template.id + 1}
-                    {/* <Icon
+        <div className="w-full bg-white rounded-2xl space-y-0.5">
+          {templates.length > 0 ? (
+            <ul>
+              {templates.map((template) => (
+                <li
+                  key={template.id}
+                  className="flex items-center justify-between relative h-20 pl-4 pr-0.5 w-full bg-white rounded-2xl xs:pr-1.5 xs:h-24"
+                >
+                  {/* template item main content */}
+                  <div className="flex items-center gap-4 w-[calc(100%-50px)] xs:w-[calc(100%-54px)]">
+                    {/* icon */}
+                    <div className="flex items-center justify-center size-[50px] shrink-0 bg-primary rounded-full text-white text-lg xs:size-16">
+                      {template.id + 1}
+                      {/* <Icon
                     src={plusIcon}
                     alt="plus icon"
                     className="size-6 xs:size-7"
                   /> */}
+                    </div>
+
+                    {/* details */}
+                    <div className="w-full overflow-hidden space-y-1.5">
+                      <h3 className="text-base font-medium truncate xs:text-lg">
+                        Template title
+                      </h3>
+
+                      {/* description */}
+                      <p className="text-dark-800/80 text-[15px] leading-5 truncate xs:text-base">
+                        Template description
+                      </p>
+                    </div>
                   </div>
 
-                  {/* details */}
-                  <div className="w-full overflow-hidden space-y-1.5">
-                    <h3 className="text-base font-medium truncate xs:text-lg">
-                      Template title
-                    </h3>
+                  {/* template link */}
+                  <Link
+                    to="/templates/template/id"
+                    className="absolute inset-0 z-0 size-full rounded-2xl"
+                  ></Link>
 
-                    {/* description */}
-                    <p className="text-dark-800/80 text-[15px] leading-5 truncate xs:text-base">
-                      Template description
-                    </p>
-                  </div>
-                </div>
-
-                {/* template link */}
-                <Link
-                  to="/templates/template/id"
-                  className="absolute inset-0 z-0 size-full rounded-2xl"
-                ></Link>
-
-                {/* delete btn */}
-                <button
-                  onClick={() => deleteTemplate(template.id)}
-                  className="flex items-center justify-center z-10 size-12 shrink-0 rounded-lg"
-                >
-                  <Icon src={deleteIcon} className="size-6 xs:size-7" />
-                </button>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <EmptyData className="pt-8" />
-        )}
+                  {/* delete btn */}
+                  <button
+                    onClick={() => deleteTemplate(template.id)}
+                    className="flex items-center justify-center z-10 size-12 shrink-0 rounded-lg"
+                  >
+                    <Icon src={deleteIcon} className="size-6 xs:size-7" />
+                  </button>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <EmptyData className="py-9" />
+          )}
+        </div>
       </section>
     </>
   );
