@@ -16,6 +16,7 @@ const Navbar = () => {
               height="28"
               fill="none"
               viewBox="0 0 28 28"
+              className="size-[25px] xs:size-7"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -49,6 +50,7 @@ const Navbar = () => {
               height="28"
               fill="none"
               viewBox="0 0 28 28"
+              className="size-[25px] xs:size-7"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -86,10 +88,10 @@ const Navbar = () => {
           </NavLink>
         </li>
 
-        {/* Add (Main) */}
+        {/* Create (Main) */}
         <li className="w-1/5">
           <NavLink
-            to="/add"
+            to="/create"
             className="flex flex-col items-center justify-center gap-1.5 relative w-full h-full navlink"
           >
             <svg
@@ -115,7 +117,7 @@ const Navbar = () => {
             </svg>
 
             {/* link name */}
-            <h3 className="active-text pt-9 text-xs font-medium">Add</h3>
+            <h3 className="active-text pt-8 text-xs font-medium xs:pt-[33px]">Create</h3>
           </NavLink>
         </li>
 
@@ -130,6 +132,7 @@ const Navbar = () => {
               height="28"
               fill="none"
               viewBox="0 0 28 28"
+              className="size-[25px] xs:size-7"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -155,6 +158,7 @@ const Navbar = () => {
               height="28"
               fill="none"
               viewBox="0 0 28 28"
+              className="size-[25px] xs:size-7"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path

@@ -125,7 +125,7 @@ const Home = () => {
             {/* top up the account */}
             <Link
               to="/buy"
-              className="flex items-center justify-center h-12 w-full bg-primary rounded-lg text-white"
+              className="btn-primary"
             >
               Top up the account
             </Link>

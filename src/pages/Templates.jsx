@@ -83,7 +83,7 @@ const Templates = () => {
       {/* Header */}
       <header className="flex flex-col items-center justify-center gap-4 pt-6">
         {/* page icon */}
-        <Icon src={listImg} className="size-28" />
+        <Icon src={listImg} className="size-28" alt="3d list" size={112} />
 
         {/* page title */}
         <h1 className="text-center text-xl font-semibold xs:text-2xl">
@@ -91,7 +91,7 @@ const Templates = () => {
         </h1>
 
         {/* page description */}
-        <p className="text-lg text-center">
+        <p className="text-base text-center xs:text-lg">
           Increase your speed with <br className="xs:hidden" /> templates
         </p>
       </header>
