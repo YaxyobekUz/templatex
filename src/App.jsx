@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 // Router
 import {
@@ -11,6 +11,7 @@ import {
 // Pages
 import Home from "./pages/Home";
 import Page404 from "./pages/Page404";
+import Premium from "./pages/Premium";
 import Templates from "./pages/Templates";
 
 // Layouts
@@ -23,6 +24,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="*" element={<Page404 />} />
         <Route path="templates" element={<Templates />} />
+        <Route path="premium" element={<Premium />} />
       </Route>
     )
   );
