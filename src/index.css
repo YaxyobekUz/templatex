@@ -22,6 +22,10 @@
 
 /* --- Components --- */
 @layer components {
+  .btn-primary {
+    @apply flex items-center justify-center h-12 w-full bg-primary rounded-lg text-white;
+  }
+
   .navlink .active-fill-inner {
     @apply fill-dark-800 transition-colors duration-200;
   }
@@ -70,4 +74,17 @@
   .container {
     @apply max-w-[480px] w-full px-4 mx-auto;
   }
+}
+
+@keyframes animate-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.animate-up {
+  animation: animate-up 500ms ease;
 }
