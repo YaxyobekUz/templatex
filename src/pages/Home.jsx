@@ -13,7 +13,7 @@ import useTelegram from "../hooks/useTelegram";
 // Images
 import plusIcon from "../assets/images/icons/plus-white.svg";
 import settingsIcon from "../assets/images/icons/settings.svg";
-import megaphoneImg from "../assets/images/others/megaphone.webp";
+import megaphoneImg from "../assets/images/others/megaphone.png";
 
 const Home = () => {
   const { tg, user } = useTelegram();

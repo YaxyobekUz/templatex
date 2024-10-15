@@ -11,7 +11,7 @@ import EmptyData from "../components/EmptyData";
 // Images
 import _3XIcon from "../assets/images/icons/3x.svg";
 import userIcon from "../assets/images/icons/user.svg";
-import startImg from "../assets/images/others/star.webp";
+import startImg from "../assets/images/others/star.png";
 import crownIcon from "../assets/images/icons/crown.svg";
 import imgBoxIcon from "../assets/images/icons/img-box.svg";
 

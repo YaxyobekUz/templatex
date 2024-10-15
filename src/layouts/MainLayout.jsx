@@ -1,10 +1,16 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 
 // Components
 import Navbar from "../components/Navbar";
 
 const MainLayout = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <>
       {/* Main */}

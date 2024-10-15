@@ -10,7 +10,7 @@ import Arrow from "../components/Arrow";
 import EmptyData from "../components/EmptyData";
 
 // Images
-import listImg from "../assets/images/others/list.webp";
+import listImg from "../assets/images/others/list.png";
 import deleteIcon from "../assets/images/icons/delete.svg";
 import plusIcon from "../assets/images/icons/plus-white.svg";
 
